@@ -5,3 +5,15 @@
  */
 
 include_once('grisonsbruisefeatures.features.inc');
+
+/**
+ * Implements hook_jcarousel_skin_info().
+ */
+function grisonsbruisefeatures_jcarousel_skin_info() {
+  $skins = array();
+  $skins['gb_block'] = array(
+    'title' => t('GB Block'),
+    'file' => 'jcarusel_skin/gb/jcarousel-gb.css',
+  );
+  return $skins;
+}
