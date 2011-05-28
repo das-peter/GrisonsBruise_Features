@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the GrisonsBruiseFeatures feature.
+ */
+
+include_once('grisonsbruisefeatures.features.inc');
