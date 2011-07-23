@@ -1,6 +1,8 @@
 core = "7.x"
 dependencies[] = "addressfield"
 dependencies[] = "features"
+dependencies[] = "media"
+dependencies[] = "spamspan"
 dependencies[] = "strongarm"
 dependencies[] = "taxonomy"
 dependencies[] = "views"

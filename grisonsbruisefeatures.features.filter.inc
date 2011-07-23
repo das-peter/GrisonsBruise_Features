@@ -22,14 +22,14 @@ function grisonsbruisefeatures_filter_default_formats() {
         'weight' => '0',
         'status' => '1',
         'settings' => array(
-          'filter_url_length' => 72,
+          'filter_url_length' => '72',
         ),
       ),
       'filter_html' => array(
         'weight' => '1',
         'status' => '1',
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd>',
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <br> <p> <table> <tr> <td> <th> <hr> <img>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
@@ -43,6 +43,19 @@ function grisonsbruisefeatures_filter_default_formats() {
         'weight' => '10',
         'status' => '1',
         'settings' => array(),
+      ),
+      'media_filter' => array(
+        'weight' => '10',
+        'status' => '1',
+        'settings' => array(),
+      ),
+      'spamspan' => array(
+        'weight' => '10',
+        'status' => '1',
+        'settings' => array(
+          'spamspan_at' => ' [at] ',
+          'spamspan_use_graphic' => 0,
+        ),
       ),
     ),
   );
@@ -59,7 +72,7 @@ function grisonsbruisefeatures_filter_default_formats() {
         'weight' => '0',
         'status' => '1',
         'settings' => array(
-          'filter_url_length' => 72,
+          'filter_url_length' => '72',
         ),
       ),
       'filter_autop' => array(
@@ -71,6 +84,19 @@ function grisonsbruisefeatures_filter_default_formats() {
         'weight' => '10',
         'status' => '1',
         'settings' => array(),
+      ),
+      'media_filter' => array(
+        'weight' => '10',
+        'status' => '1',
+        'settings' => array(),
+      ),
+      'spamspan' => array(
+        'weight' => '10',
+        'status' => '1',
+        'settings' => array(
+          'spamspan_at' => ' [at] ',
+          'spamspan_use_graphic' => 0,
+        ),
       ),
     ),
   );
