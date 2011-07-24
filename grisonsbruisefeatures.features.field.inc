@@ -10,6 +10,69 @@
 function grisonsbruisefeatures_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'taxonomy_term-mitgliederbeitr_ge-field_membership_fee_amount'
+  $fields['taxonomy_term-mitgliederbeitr_ge-field_membership_fee_amount'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_membership_fee_amount',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+        'precision' => '10',
+        'scale' => '2',
+      ),
+      'translatable' => '1',
+      'type' => 'number_decimal',
+    ),
+    'field_instance' => array(
+      'bundle' => 'mitgliederbeitr_ge',
+      'default_value' => array(
+        0 => array(
+          'value' => '50',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => '0',
+        ),
+      ),
+      'entity_type' => 'taxonomy_term',
+      'field_name' => 'field_membership_fee_amount',
+      'label' => 'Mitgliedsbeitrag',
+      'required' => 1,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'CHF',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '31',
+      ),
+    ),
+  );
+
   // Exported field: 'user-user-field_address'
   $fields['user-user-field_address'] = array(
     'field_config' => array(
@@ -53,7 +116,7 @@ function grisonsbruisefeatures_field_default_fields() {
           'module' => 'addressfield',
           'settings' => array(),
           'type' => 'addressfield_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'user',
@@ -120,7 +183,7 @@ function grisonsbruisefeatures_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 1,
+          'weight' => '1',
         ),
       ),
       'entity_type' => 'user',
@@ -144,6 +207,7 @@ function grisonsbruisefeatures_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Adresse');
   t('Mitgliederbeitrag bezahlt');
+  t('Mitgliedsbeitrag');
 
   return $fields;
 }
